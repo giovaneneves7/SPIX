@@ -133,35 +133,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget buildCard(String title, double price, String imageUrl) {
-    return Card(
-      child: Column(
-        children: [
-          Image.network(imageUrl, width: 50, height: 5-0),
-          ButtonBar(
-            alignment: MainAxisAlignment.center,
-            children: [
-              Expanded(
-                child: ElevatedButton(
-                  onPressed: () {
-                    addToTotal(price);
-                  },
-                  child: Text('Adicionar'),
-                ),
-              ),
-              Expanded(
-                child: ElevatedButton(
-                  onPressed: () {
-                    removeFromTotal(price);
-                  },
-                  child: Text('Remover'),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
   }
 
 }
